@@ -114,7 +114,7 @@ main {
 }
 
 #button:hover {
-    scale: 1.03;
+    scale: 1.01;
 
 }
 
@@ -136,27 +136,27 @@ main {
 }
 
 
-#button i {
-    transform: scale(1.);
-    padding: .5vw;
+#button i{
+    
+    padding: .6vw;
     border-radius: 30px;
     transition-duration: .3s;
     margin: 1vw;
-
-
 }
 
-#button:hover i {
-    padding: .8vw;
+#button:hover i{
+   scale: 1.2;
 }
 
-.button1 i {
+.button1 i{
     background-color: #000000;
     color: white;
 }
 
 .button2 i {
-    background-color: #1A1A1A;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
 }
 
 
@@ -472,6 +472,7 @@ main {
 
 /* page-3 starting */
 .page-3 {
+    margin-top: 15vh;
     width: 100%;
     position: relative;
 }
@@ -951,6 +952,10 @@ thin {
     color: rgba(255, 255, 255, 0.609);
 }
 
+.footer-foot {
+    padding: 1vw 0px;
+    border-top: .5px solid white;
+}
 
 .footer-foot ul li {
     text-align: left;
@@ -1216,6 +1221,9 @@ thin {
         font-variant: small-caps;
         text-transform: none;
     }
+    .read-more-btn h3{ 
+        padding: 10px;
+    }
 
     .pg3-left span {
 
@@ -1440,5 +1448,15 @@ thin {
     .copyright p {
         font-size: 1.5vh;
         color: #ffffff;
+    }
+    #button:hover {
+        scale: 1.02;
+    
+    }
+    #button{ 
+        scale: 1;
+    }
+    #button:hover i{ 
+        scale: 1.1;
     }
 }
