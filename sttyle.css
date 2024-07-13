@@ -19,6 +19,7 @@ body {
 
 
 
+
 .nav {
     z-index: 3;
     position: fixed;
@@ -62,7 +63,7 @@ main {
   }
   
   .menu {
-    height: 900px;
+    height: 100VH;
     width: 100%;
     align-items: center;
     background-color: #30323500;
@@ -153,17 +154,35 @@ main {
     color: white;
     mix-blend-mode: difference;
 }
+.logo img{ 
+    width:15vw;
+    margin-top:50px ;
+}
 
 .nav-container i {
     font-size: 20px;
     color: white;
     mix-blend-mode: difference;
 }
-
-.hero {
-    background-color: #000000;
-    width: 100%;
+.rrrr{
     height: 100%;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    background-image: url(./imgs/3\ \(2\).jpg);
+    position: absolute;
+    
+   
+}
+.hero {
+
+    position: relative;
+    background-position: center;
+ backdrop-filter: blur(2px);
+    background-color: #000000a6;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -183,11 +202,10 @@ main {
 
 .hero p {
     padding: 8vh 0px;
-    width: 30vw;
-    line-height: 1.3vw;
-    font-size: 1.0vw;
+    width: 40vw;
+    letter-spacing: 1.3px;
     font-weight: 600;
-    color: #343434;
+    color: #b8b7b7;
 }
 
 .buttons {
@@ -218,12 +236,13 @@ main {
 #button:hover {
     scale: 1.01;
 
+
 }
 
 #button h2 {
     padding-left: 20px;
     font-size: 1.9vh;
-    font-weight: 400;
+    font-weight: 700;
     font-variant: small-caps;
 }
 
@@ -231,10 +250,18 @@ main {
     background-color: #FF9800;
 
 }
+.button1:hover{ 
+    background-color: #ffffff;
+}
 
 .button2 {
     background-color: transparent;
+    border: 2px solid;
     color: white;
+}
+.button2:hover{ 
+    background: #ffffff;
+    color: rgb(60, 60, 60);
 }
 
 
@@ -268,6 +295,7 @@ main {
 .page-1 {
     background: white;
     width: 100%;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -281,7 +309,7 @@ main {
     text-transform: capitalize;
     font-size: 3rem;
     width: 25vw;
-    font-weight: 100;
+    font-weight: 200;
     padding: 3vw 0;
 }
 
@@ -292,10 +320,10 @@ main {
 
 .left p {
 
-    line-height: 1.3vw;
+    line-height: 1.4vw;
     font-size: 1.1vw;
-    font-weight: 350;
-    color: #343434b6;
+    font-weight: 450;
+    color: #252424;
 }
 
 .right {
@@ -357,7 +385,7 @@ main {
     padding: 0 3%;
     color: #343434;
     font-size: 1.2vw;
-    font-weight: 250;
+    font-weight: 300;
     text-transform: capitalize;
 }
 
@@ -457,6 +485,7 @@ main {
 }
 
 .button-head h4 {
+    white-space: nowrap;
     margin: 10px;
     padding-left: 20px;
     font-size: 1.9vh;
@@ -533,7 +562,7 @@ main {
 
 .overlay p {
     padding-left: 30px;
-    color: #838383;
+    color: #d6d3d3;
     align-items: center;
     font-size: .85vw;
     line-height: 180%;
@@ -600,10 +629,12 @@ main {
 }
 
 .pg3-left p {
-    line-height: 1.5vw;
+    line-height: 1.6vw;
     padding-top: 5vw;
-    color: #343434b7;
-    font-weight: 600;
+    font-size: 1.1vw;
+    font-weight: 450;
+    color: #343434;
+    
 }
 
 .btn-cont {
@@ -612,9 +643,18 @@ main {
 }
 
 .read-more-btn {
-    background-color: #1aff00;
-    max-width: 260px;
+    background-color: #ffe600;
+    width: 300px;
     text-transform: capitalize;
+}
+.read-more-btn:hover{ 
+ background-color:rgba(255, 0, 0, 0.963) ;  
+ color: white;  
+}
+.read-more-btn h3{ 
+    white-space: nowrap;
+    font-weight: 400;
+
 }
 
 .read-more-btn i {
@@ -630,7 +670,7 @@ main {
     height: 20vh;
 }
 
-thin {
+thin{
     font-weight: 200;
     /* background-color: white; */
 }
@@ -1122,11 +1162,15 @@ thin {
         box-shadow: .1px .1px .5px white;
         mix-blend-mode: normal;
     }
+    .logo img{ 
+        margin-top: 0;
+        width: 50%;
 
+    }
     .hero {
-        background-color: #000000;
+        background-color: #000000a4;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         justify-content: left;
@@ -1143,22 +1187,22 @@ thin {
         padding: 5vh 0px;
         font-size: 2vh;
         font-weight: 600;
-        line-height: 2vh;
-        color: #343434;
+     
         width: 90%;
     }
 
-    .buttons {
+    .buttons {margin-top: 30px;
         min-width: 180px;
         width: 70%;
         gap: 20px;
-        display: block;
-        margin-bottom: 15vh;
+        flex-direction: column;
     }
+ 
 
     #button {
-        padding: 1vh .5vh;
-        height: 50px
+        padding: 28px 30px;
+        height: 50px;
+        white-space:nowrap;
     }
 
     #button h2 {
@@ -1327,7 +1371,7 @@ thin {
         text-transform: none;
     }
     .read-more-btn h3{ 
-        padding: 10px;
+        padding-left: 20px;
     }
 
     .pg3-left span {

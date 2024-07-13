@@ -29,13 +29,13 @@ gsap.from(".hero h1",{
 
  })
 
-gsap.from(".img-container ",{ 
+gsap.from(".img-container .imgs ",{ 
     
     opacity:0,
     y:50,
     duration:1,
     scale:.9,
-    stagger:3,
+    stagger:1,
   
         scrollTrigger: {
             scroller:"body",
