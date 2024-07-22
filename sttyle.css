@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-#pages {
+.spacex {
     padding: 0 18%;
 }
 
@@ -49,8 +49,8 @@ main {
 
 
 .phone {
+    mix-blend-mode: difference;
     
-  
     overflow: hidden;
     z-index: 20;
     position: fixed;
@@ -60,6 +60,11 @@ main {
   }
   .active.phone{ 
     height: 100%;
+    mix-blend-mode: normal;
+  }
+  .options a.active {
+    background-color: red;
+    color: white;
   }
   
   .menu {
@@ -68,7 +73,7 @@ main {
     align-items: center;
     background-color: #30323500;
     clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
-    color: #9d9999;
+    color: #827f7f;
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
@@ -97,6 +102,17 @@ main {
     opacity : 0; 
     transition: opacity 400ms;
   }
+  .option a{ 
+    padding: 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .option a:hover{ 
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+  }
+
   .option {
     cursor: pointer;
     margin: 8px 0;
@@ -107,14 +123,20 @@ main {
   .active .options {
     opacity: 1;    
 }
+.nav-svg{ 
+    
+    color: rgb(255, 252, 252);
+}
   .x {
     
+    mix-blend-mode: difference;
     pointer-events: none;
     position: absolute;
     top: 20px;
     right: 10px;
   }
   .top-bars {
+    
     stroke: #ffffff;
     transition: stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -235,23 +257,33 @@ main {
 
 #button:hover {
     scale: 1.01;
-
-
 }
 
-#button h2 {
+#button a{
     padding-left: 20px;
-    font-size: 1.9vh;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 700;   
     font-variant: small-caps;
+    text-decoration: none;
 }
+
 
 .button1 {
     background-color: #FF9800;
+}
+.button1 a {  
+    color: rgb(0, 0, 0);
 
 }
 .button1:hover{ 
     background-color: #ffffff;
+}
+.button2 a{ 
+    color: rgb(255, 255, 255);
+}
+.button2:hover a{ 
+
+    color: #000000;
 }
 
 .button2 {
@@ -259,18 +291,20 @@ main {
     border: 2px solid;
     color: white;
 }
+
 .button2:hover{ 
     background: #ffffff;
-    color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
 }
 
-
 #button i{
-    
-    padding: .6vw;
+    padding: 10px;
     border-radius: 30px;
     transition-duration: .3s;
     margin: 1vw;
+}
+.arrow i{ 
+    font-size: 25px;
 }
 
 #button:hover i{
@@ -289,11 +323,8 @@ main {
 }
 
 
-
-
-
 .page-1 {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 100%;
     margin-top: 150px;
     display: flex;
@@ -895,7 +926,7 @@ thin{
 .popular-div p thin {
     font-weight: 300;
     padding-left: 1vw;
-    color: #34343485;
+    color: #02020285;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -1148,7 +1179,7 @@ thin{
 }
 
 @media screen and (max-width:480px) {
-    #pages {
+    .spacex {
         padding: 0 10%;
     }
 
@@ -1187,8 +1218,11 @@ thin{
         padding: 5vh 0px;
         font-size: 2vh;
         font-weight: 600;
-     
+     display: none;
         width: 90%;
+    }
+    .arrow i{ 
+        font-size: 25px;
     }
 
     .buttons {margin-top: 30px;
@@ -1197,12 +1231,14 @@ thin{
         gap: 20px;
         flex-direction: column;
     }
+    
  
 
     #button {
         padding: 28px 30px;
         height: 50px;
         white-space:nowrap;
+        width: 250px;
     }
 
     #button h2 {
@@ -1210,10 +1246,15 @@ thin{
         white-space: nowrap;
         font-weight: 600;
     }
+    #button a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+  
 
     #button i {
         transform: scale(1.0);
-        padding: 1.0vh;
+        padding: 10px;
         border-radius: 30px;
         transition-duration: .3s;
         margin-right: 3vh;
@@ -1227,7 +1268,8 @@ thin{
         width: 100%;
         align-items: center;
     }
-
+    .rrrr {
+        height: 120vh;}
     .left h1 {
 
         font-size: 2rem;

@@ -22,19 +22,27 @@
 
 <!-- nav menu starts here  -->
     
-    <div >
+    <div class="all-nav" >
 
 <div class="phone">
   
   <div class="menu">
     <div class="options">
-      <div class="option selected">Home</div>
-      <div class="option">About</div>
-      <div class="option">Products</div>
-      <div class="option">Contact</div>
-    </div>
+      <div class="option" id="homeOption">
+          <a href="#home">Home</a>
+      </div>
+      <div class="option" id="aboutOption">
+          <a href="#about">About</a>
+      </div>
+      <div class="option" id="servicesOption">
+          <a href="#services">Services</a>
+      </div>
+      <div class="option" id="contactOption">
+          <a href="#contact">Contact</a>
+      </div>
+  </div>
   </div> 
-  <div style="mix-blend-mode: difference;"> 
+  <div class="nav-svg"> 
   <svg class="x"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 400" height="400" width="220"  >
     <g class="top-bars" stroke-width="4">
       <path class="bar bar1" d="M 178,20 H 202" />
@@ -62,7 +70,7 @@
 
     <main class="main">
       <div class="rrrr"></div>
-      <div id="pages"class="hero">
+      <div id="home"class="hero spacex">
         <h1>
           <span>Bhilai's Training </span>Institute<br/>with
           <span>  Web & Graphic</span> Solutions
@@ -71,16 +79,21 @@
           Welcome to Bhilai's leading training institute for web development and design. Master Node.js, React.js, and motion graphics with our expert-led courses. Equip yourself with the skills needed to excel in the digital world.
         </p><div class="buttons">
         <div id="button"  class="button1">
-          <h2>what we do</h2>
-          <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+          <a href="https://wa.me/+918770800807?text=Hello%20there!" class="whatsapp-button" target="_blank">
+             WhatsApp us
+        </a>
+          <div class="arrow"><i class="ri-whatsapp-line"></i></div>
         </div>
-        <div id="button" class="button2"><h2>view works</h2><i class="ri-arrow-right-line"></i></div>
+
+        <div id="button" class="button2"><a href="tel:+918770800807" class="call-button">
+          Call Us
+      </a><i class="ri-arrow-right-line"></i></div>
         </div>
 
         </div>
 
 
-        <div id="pages" class="page-1"> 
+        <div id="pages" class="page-1 spacex"> 
           <div class="left"> <h1> <span> extra Skill </span> to your Resume</h1> 
           <p> Adding extra skills to your resume is essential in today’s competitive job market, and our institute in Bhilai stands out as the best place to do just that. We offer comprehensive training in web development, Node.js, React.js, and motion graphic design, taught by industry experts. <br>
           <br>
@@ -96,7 +109,10 @@
             <div class="img-container"> <img src="./imgs/IMG_20230928_121408.jpg" alt=""></div>
           </div>
         </div>
-        <div id="pages" class="page-2">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                services                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div id="services" class="page-2 spacex">
           <div class="heading"> <div class="himg"> <img src="./imgs/3.jpg"  alt=""> </div> 
          <h2>Learning <span> skills</span></h2> 
          </div>
@@ -150,7 +166,7 @@
               </ul>
             </div> 
         </div>
-        <div id="pages" class="page-3"> 
+        <div id="about" class="page-3 spacex"> 
           <div class="about-team"> 
          <div class="pg3-left">
            <h6> meet our team </h6>
@@ -199,10 +215,14 @@
                 </div> <div class="imgs">  <img id="image" src="./imgs/3-pg3-img.jpg" alt=""></div> </li>
               <li>
                 <div class="pg3-overlay"> 
-                  <h5>Internship Gaurante</h5>
-                  <p> hello guyz</p>
+                  <h5>Internship guarantee</h5>
+                  <p> Get intern certificate with training</p>
                   <i class="ri-twitter-x-fill"></i>
-                  <i class="ri-instagram-line"></i>
+                 <a href="">
+
+                   
+                   <i class="ri-instagram-line" ></i>
+                  </a> 
                   <i class="ri-github-fill"></i>
                   <i class="ri-linkedin-fill"></i>
                 </div>
@@ -217,7 +237,7 @@
          </div>
        </div>
              <div  class="page-4"> 
-                <div id="pages" class="pg4-container"> 
+                <div id="pages" class="pg4-container spacex"> 
 
                                       <p>customer reviews are a valuable source<br>
                                       of information for both business and consumers.</p>
@@ -248,7 +268,7 @@
                 </div>
               
               </div>
-              <div id="pages" class="popular-card">
+              <div id="blog" class="popular-card spacex">
                 <h2>popular publications:</h2>
                 <div class="popular-container">
 
@@ -270,7 +290,7 @@
                 </div>
 
               </div>
-              <div id="pages" class="footer"> 
+              <div id="contact" class="footer spacex"> 
 
                 <div class="footer-container"> 
                   

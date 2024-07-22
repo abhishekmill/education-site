@@ -332,3 +332,29 @@ gsap.from(".img-container img",{
 	}
  
  })
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+    // Get all option elements
+    const options = document.querySelectorAll('.option');
+
+    // Add click event listener to each option
+    options.forEach(option => {
+        option.style.color='white'
+        option.addEventListener('click', ()=>{
+            
+           
+            document.querySelector('.phone').classList.toggle('active')
+            const sectionId = this.querySelector('a').getAttribute('href'); // Get href value
+            const section = document.querySelector(sectionId);
+           
+
+            ;// Find corresponding section
+
+            // Scroll to the section
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
